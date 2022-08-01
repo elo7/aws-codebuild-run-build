@@ -71,6 +71,9 @@ describe("githubInputs", () => {
     expect(test)
       .to.haveOwnProperty("buildspecOverride")
       .and.to.equal(undefined);
+    expect(test).to.haveOwnProperty("computeTypeOverride").and.to.equal(undefined);
+    expect(test).to.haveOwnProperty("environmentTypeOverride").and.to.equal(undefined);
+    expect(test).to.haveOwnProperty("imageOverride").and.to.equal(undefined);
     expect(test).to.haveOwnProperty("envPassthrough").and.to.deep.equal([]);
   });
 
@@ -120,6 +123,9 @@ describe("githubInputs", () => {
     expect(test)
       .to.haveOwnProperty("buildspecOverride")
       .and.to.equal(undefined);
+    expect(test).to.haveOwnProperty("computeTypeOverride").and.to.equal(undefined);
+    expect(test).to.haveOwnProperty("environmentTypeOverride").and.to.equal(undefined);
+    expect(test).to.haveOwnProperty("imageOverride").and.to.equal(undefined);
     expect(test).to.haveOwnProperty("envPassthrough").and.to.deep.equal([]);
   });
 
@@ -173,6 +179,9 @@ describe("inputs2Parameters", () => {
     expect(test)
       .to.haveOwnProperty("buildspecOverride")
       .and.to.equal(undefined);
+    expect(test).to.haveOwnProperty("computeTypeOverride").and.to.equal(undefined);
+    expect(test).to.haveOwnProperty("environmentTypeOverride").and.to.equal(undefined);
+    expect(test).to.haveOwnProperty("imageOverride").and.to.equal(undefined);
 
     // I send everything that starts 'GITHUB_'
     expect(test)
